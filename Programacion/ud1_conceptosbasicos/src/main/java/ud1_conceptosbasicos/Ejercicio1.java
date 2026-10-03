@@ -22,7 +22,7 @@ public class Ejercicio1 {
         // Hacemos el calculo:
         converter = cash * 1.14f;
 
-        System.out.println("El valor de: " + cash + " euros " + " es de " + converter + " dolares.\n" );
+        System.out.println("El valor de: " + cash + " euros " + "es de " + converter + " dolares.\n" );
         System.out.println("### Gracias por usar Software de Conversiób 1.0 ###" );
         System.out.println("### Desarrollado por Omar Landaeta - FP. DAM - Programación - Grupo A ###\n" );
 
