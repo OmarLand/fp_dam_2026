@@ -11,7 +11,8 @@ package primeraEvaluacion;
 public class MiPrimerProyecto {
 
     public static void main(String[] args) {
-        System.out.println("Bienvenido a Programacion con JAVA - DAM 2026");
-        System.out.println("# Realizando Pruebas - Omar Landaeta - #");
+        System.out.println("Omar Jesus Landaeta Cedeno");
+        System.out.println("# Ejercicio realizando el 19/09/2026 #");
+
     }
 }
