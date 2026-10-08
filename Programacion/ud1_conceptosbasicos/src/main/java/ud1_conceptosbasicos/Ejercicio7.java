@@ -1,4 +1,4 @@
-package com.example;
+package ud1_conceptosbasicos;
 /**
  * Queremos realizar un pequeño programa para introducirlo en el ordenador de a bordo de
    nuestro coche y que nos informe del consumo medio del coche cada km Diseña un 100 .

@@ -1,11 +1,11 @@
-package com.example;
+package ud1_conceptosbasicos;
 
 import java.util.Scanner;
 
 /**
  * Ejercicio8
  * Diseñar un programa al que se le introduzcan las edades de cuatro personas y nos calcule
-la media de edad de los mismos.
+ * la media de edad de los mismos.
  */
 
 public class Ejercicio8 {
@@ -32,7 +32,6 @@ public class Ejercicio8 {
 
         // Mostramos resultados:
         System.out.println("El promedio de las edades introducidas es de: " + prom + " años de edad.");
-
         
     }
 }
