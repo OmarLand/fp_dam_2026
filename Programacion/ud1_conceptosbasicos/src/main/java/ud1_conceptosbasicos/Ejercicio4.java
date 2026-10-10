@@ -44,7 +44,10 @@ public class Ejercicio4 {
         
         System.out.println("Total de Estudiantes: " + totalEst);
         System.out.println("Porcentaje de alumnos con la materia superada: " + porcenSuper + "%");
-        System.out.println("Porcentaje de alumnos Notables y sobresalientes: " + porcenSobreNota + "%");
+        // Reducción a dos decimales sugeridos por el profesor:
+        System.out.println("Porcentaje de alumnos con la materia superada >: " + String.format("%.2f", porcenSuper)  + "%");
+        // Reducción a dos decimales sugeridos por el profesor:
+        System.out.println("Porcentaje de alumnos Notables y sobresalientes: " + String.format("%.2f", porcenSobreNota) + "%");
         
         // Nota: No ha sido necesario pedir al usuario total de alumnos, porque 
         // ya viene dada por la cantidad de datos anteriores que son bien especificos
