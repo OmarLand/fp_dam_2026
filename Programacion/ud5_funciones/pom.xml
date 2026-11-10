@@ -8,6 +8,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>25</maven.compiler.release>
-        <exec.mainClass>ud5_funciones.Ud5_funciones</exec.mainClass>
+        <exec.mainClass>ud5_funciones.Ejercicio1a</exec.mainClass>
     </properties>
 </project>
