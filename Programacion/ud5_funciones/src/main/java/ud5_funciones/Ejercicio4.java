@@ -53,11 +53,11 @@ public class Ejercicio4 {
         int dia1, mes1, dia2, mes2, anio;
         int diasFecha1, diasFecha2;
 
-        System.out.println("Introduce el año:");
+        System.out.println("Introduce el anio:");
         anio = sc.nextInt();
 
         System.out.println("Introduce la primera fecha.");
-        System.out.println("Día:");
+        System.out.println("Dia:");
         dia1 = sc.nextInt();
 
         System.out.println("Mes:");
@@ -88,7 +88,7 @@ public class Ejercicio4 {
             // Calcular la diferencia entre las fechas
             int diferencia = Math.abs(diasFecha2 - diasFecha1);
 
-            System.out.println("Días comprendidos entre las dos fechas: " + diferencia);
+            System.out.println("Dias comprendidos entre las dos fechas: " + diferencia);
         }
 
         sc.close();

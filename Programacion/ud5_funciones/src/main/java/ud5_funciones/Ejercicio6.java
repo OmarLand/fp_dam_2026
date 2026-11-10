@@ -32,7 +32,7 @@ public class Ejercicio6 {
         
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduce un número entero:");
+        System.out.println("Introduce un numero entero:");
         int numero = sc.nextInt();
 
         int resultado = cantidadDivisores(numero);

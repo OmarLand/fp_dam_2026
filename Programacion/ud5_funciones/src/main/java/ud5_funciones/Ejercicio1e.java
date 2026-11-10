@@ -28,10 +28,10 @@ public class Ejercicio1e {
         
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduce el primer número:");
+        System.out.println("Introduce el primer numero:");
         int num1 = sc.nextInt();
 
-        System.out.println("Introduce el segundo número:");
+        System.out.println("Introduce el segundo numero:");
         int num2 = sc.nextInt();
 
         int resultado = aleatorio(num1, num2);
@@ -39,7 +39,7 @@ public class Ejercicio1e {
         if (resultado == -1) {
             System.out.println("Valores incorrectos.");
         } else {
-            System.out.println("Número aleatorio generado: " + resultado);
+            System.out.println("Numero aleatorio generado: " + resultado);
         }
 
         sc.close();

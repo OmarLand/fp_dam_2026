@@ -41,7 +41,7 @@ public class Ejercicio5 {
 
             System.out.println("El factorial de " + numero + " es: " + factorial(numero));
 
-            System.out.println("\nIntroduce otro número entre 1 y 20:");
+            System.out.println("\nIntroduce otro numero entre 1 y 20:");
             numero = sc.nextInt();
         }
 

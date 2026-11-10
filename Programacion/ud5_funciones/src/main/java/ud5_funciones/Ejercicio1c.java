@@ -35,10 +35,10 @@ public class Ejercicio1c {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduce el primer número:");
+        System.out.println("Introduce el primer numero:");
         long num1 = sc.nextLong();
 
-        System.out.println("Introduce el segundo número:");
+        System.out.println("Introduce el segundo numero:");
         long num2 = sc.nextLong();
 
         long resultado = sumaIntervalo(num1, num2);

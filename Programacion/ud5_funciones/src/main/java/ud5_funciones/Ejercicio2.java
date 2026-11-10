@@ -34,12 +34,12 @@ public class Ejercicio2 {
         int opcion;
 
         do {
-            System.out.println("\n--- MENÚ DE ÁREAS ---");
-            System.out.println("1. Área del círculo");
-            System.out.println("2. Área del cuadrado");
-            System.out.println("3. Área del triángulo");
+            System.out.println("\n--- MENU DE AREAS ---");
+            System.out.println("1. Area del círculo");
+            System.out.println("2. Area del cuadrado");
+            System.out.println("3. Area del triangulo");
             System.out.println("4. Salir");
-            System.out.println("Selecciona una opción:");
+            System.out.println("Selecciona una opcion:");
 
             opcion = sc.nextInt();
 
@@ -49,14 +49,14 @@ public class Ejercicio2 {
                     System.out.println("Introduce el radio:");
                     double radio = sc.nextDouble();
 
-                    System.out.println("Área del círculo: " + areaCirculo(radio));
+                    System.out.println("Area del círculo: " + areaCirculo(radio));
                     break;
 
                 case 2:
                     System.out.println("Introduce el lado:");
                     double lado = sc.nextDouble();
 
-                    System.out.println("Área del cuadrado: " + areaCuadrado(lado));
+                    System.out.println("Area del cuadrado: " + areaCuadrado(lado));
                     break;
 
                 case 3:
@@ -66,7 +66,7 @@ public class Ejercicio2 {
                     System.out.println("Introduce la altura:");
                     double altura = sc.nextDouble();
 
-                    System.out.println("Área del triángulo: " + areaTriangulo(base, altura));
+                    System.out.println("Area del triángulo: " + areaTriangulo(base, altura));
                     break;
 
                 case 4:
@@ -74,7 +74,7 @@ public class Ejercicio2 {
                     break;
 
                 default:
-                    System.out.println("Opción incorrecta. Inténtalo de nuevo.");
+                    System.out.println("Opcion incorrecta. Intentalo de nuevo.");
             }
 
         } while (opcion != 4);

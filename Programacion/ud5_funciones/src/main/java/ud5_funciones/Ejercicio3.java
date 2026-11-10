@@ -41,13 +41,13 @@ public class Ejercicio3 {
         int dia, mes, anio;
         int diasPasados = 0;
 
-        System.out.println("Introduce el día:");
+        System.out.println("Introduce el dia:");
         dia = sc.nextInt();
 
         System.out.println("Introduce el mes:");
         mes = sc.nextInt();
 
-        System.out.println("Introduce el año:");
+        System.out.println("Introduce el anio:");
         anio = sc.nextInt();
 
         // Comprobar que el mes sea válido
@@ -70,7 +70,7 @@ public class Ejercicio3 {
                 // Sumar los días transcurridos del mes actual
                 diasPasados += dia - 1;
 
-                System.out.println("Días pasados desde el 1 de enero: " + diasPasados);
+                System.out.println("Dias pasados desde el 1 de enero: " + diasPasados);
             }
         }
 
