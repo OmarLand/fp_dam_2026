@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
 
-     // Función que devuelve los días que tiene un mes
+    // Función que devuelve los días que tiene un mes
     public static int calcularDiasMes(int anio, int mes) {
 
         switch (mes) {
