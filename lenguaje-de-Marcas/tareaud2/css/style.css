@@ -1,0 +1,9 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fondo-azul{
+    background-color: #173B5F;
+    color: white;
+}
