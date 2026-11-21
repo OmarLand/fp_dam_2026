@@ -10,23 +10,55 @@
     
     <header class="fondo-azul">
         <nav>
-            <div class="titulo">TecnoRepars</div>
+            <div id="titulo">TecnoRepara</div>
             <ul>
-                <li>Inicio</li>
-                <li>Servizos</li>
                 <li>Nós</li>
+                <li>Servizos</li>
+                <li>Inicio</li>
             </ul>
         </nav>
     </header>
 
     <main class="contenedor-principal">
-        <div class="benvidos">Benvidos a nosa tenda</div>
-        <div class="servizos">Servizos</div>
-        <div class="sobre-nos">Sobre nós</div>
+        
+        <div class="benvidos main-padding row">
+            <div class="flexing-column">
+                <h1>Benvidos á nosa tenda de reparación de ordenadores</h1>
+                <p class="parrafo-benvidos">Na nosa tenda ofrecemos servizos de reparación de ordenadores a particulares e pequenas empresas. Cunha ampla experiencia no sector, garantimos solución rápidas e efectivas.</p>
+            </div>
+            <img id="imagen-ejemplo" src="/img/imagen-recurso.jpg" alt="imagen">
+        </div>
+                
+
+        <div class="servizos main-padding">
+            <h1 class="titulo-servizo"> Servizos </h1> 
+            
+            <!-- Estoy reutilizando la clase row del css -->
+            <div class="row row-servizos">
+
+                <div class="servizo-col">
+                    <h2 class="serv-titu">Reparación de ordenadores</h2>
+                    <p class="serv-des">Somos especialistas en reparación de ordenadores, xa sexan de sobremesa, portátiles ou servidores.</p>
+                </div>
+                
+                <div class="servizo-col">
+                    <h2 class="serv-titu">Actualizacións de software</h2>
+                    <p class="serv-des">Realizamos a instalación e a actualización de aplicacións, así como a limpeza de virus e malware.</p>
+                </div>
+                
+                <div class="servizo-col">
+                    <h2 class="serv-titu">Recuperación de datos</h2>
+                    <p class="serv-des">En TecnoRepara somos profesionais na recuperación de arquivos de calquera equipo en calquera formato comercial.</p>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="sobre-nos main-padding">Sobre nós</div>
     </main>
 
 
-    <footer class="fondo-azul">
+    <footer class="fondo-azul main-padding">
         Termos do servizo - Politica de privacidade
     </footer>
 

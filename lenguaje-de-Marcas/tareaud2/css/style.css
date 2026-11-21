@@ -1,9 +1,136 @@
-header{
+html, body{
+    margin      : 0;
+    font-family : Arial, Helvetica, sans-serif;
+}
+
+/* Inicio del Navegador del header*/
+nav{
+    /* border          : 1px solid red; */
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+    padding         : 15px 42px 15px 42px;
+}
+
+ul{
+    list-style-type : none;
+    margin          : 0;
+    padding         : 0;
+    overflow        : hidden;
+}
+
+li{
+    margin          : 8px;
+    font-size       : 18px;
+}
+
+ul li{
+    float           : right;
+}
+
+ul li a{
+    display         : block;
+    color           : white;
+    text-align      : center;
+    text-decoration : none;
+}
+
+#titulo{
+    font-size      : 30px;
+    font-weight    : bold;
+}
+/* Fin de Navegador del header*/
+
+/* Inicio del Contenedor principal */
+
+/* Clase para controlar el padding - Espacio que cubre toda la pagina */
+.main-padding{
+    padding : 18px;
+}
+
+h1{
+    font-size : 60px;
+}
+
+/* He usado flexbox para controlar la imagen y ponerlo al lado del <p> y el <h1> el vertical*/
+.flexing-column{
+    display        : flex;
+    flex-direction : column;
+}
+
+/* Con esta clase controlo los margenes del parrafo */
+.parrafo-benvidos{
+    font-size  : 25px;
+    width      : 80%;
+    margin-top : 5px;
+}
+
+/* He usado flexbox para controlar la imagen y ponerlo al lado del <p> y el <h1> en horizontal*/
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+#imagen-ejemplo{
+    border-radius : 10px;
+    height        : 30%;
+    margin        : 10px;
+}
+
+/* Uso esta clase para el Header y el Footer */
+.fondo-azul{
+    background-color : #173B5F;
+    color            : white;
+}
+
+.benvidos{
+    border           : 1px solid #FFC057;
+    background-color : #FFC057;
+    color            : #173B5F;
+    padding          : 15px 55px 15px 55px;
+}
+
+/* Inicio de apartado Servizos */
+.servizos{
+    /* border: 1px solid red; */
+    display          : flex;
+    justify-content  : space-around;
+    background-color : #BDE3D4;
+    color            : #173B5F;
+}
+
+.titulo-servizo{
+    border: 1px solid red;
+    font-size  : 25px;
+    padding    : 0 0 0 0px;
+    margin-top : 0px;
+}
+
+.servizo-col{
+    border       : 1px solid red;
+    width        : 25%;
+    /* margin-left  : 3px;
+    margin-right : 40px; */
+    margin-top   : 25px;
+
+}
+
+.serv-titu{
+    font-size: 21px;
+}
+
+.serv-des{
+    font-size: 20px;
+}
+
+.row-servizos{
     display: flex;
     justify-content: space-between;
 }
 
-.fondo-azul{
-    background-color: #173B5F;
-    color: white;
+/* Fin de apartado Servizos */
+
+.sobre-nos{
+    background-color : #FFFAEE;
+    color            : #173B5F;
 }
