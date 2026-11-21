@@ -1,98 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Tecno Repara</title>
 </head>
+
 <body>
-    
+
+    <!-- ==========================================
+         1. HEADER - NAVEGACIÓN PRINCIPAL
+    =========================================== -->
+
     <header class="fondo-azul">
         <nav>
             <div id="titulo">TecnoRepara</div>
             <ul>
-                <li> <a href="#nos"> Nós </a></li>
-                <li> <a href="#serv">Servizos</a></li>
-                <li> <a href="index.html">Inicio</a></li>
+                <li><a href="#nos">Nós</a></li>
+                <li><a href="#serv">Servizos</a></li>
+                <li><a href="index.html">Inicio</a></li>
             </ul>
         </nav>
     </header>
 
+    <!--==========================================
+         2. CONTENEDOR PRINCIPAL
+    ===========================================-->
+
     <main class="contenedor-principal">
-        
+
+        <!----------------------------------------
+             2.1. PRESENTACIÓN Y BIENVENIDA
+        ----------------------------------------->
+
         <div class="benvidos main-padding row">
             <div class="flexing-column">
                 <h1>Benvidos á nosa tenda de reparación de ordenadores</h1>
-                <p class="parrafo-benvidos">Na nosa tenda ofrecemos servizos de reparación de ordenadores a particulares e pequenas empresas. Cunha ampla experiencia no sector, garantimos solución rápidas e efectivas.</p>
+                <p class="parrafo-benvidos">
+                    Na nosa tenda ofrecemos servizos de reparación de
+                    ordenadores a particulares e pequenas empresas.
+                    Cunha ampla experiencia no sector, garantimos
+                    solución rápidas e efectivas.
+                </p>
             </div>
-            <img id="imagen-ejemplo" src="/img/imagen-recurso.jpg" alt="imagen">
+            <img id="imagen-ejemplo" src="/img/imagen-recurso.jpg" alt="Imagen de ejemplo">
         </div>
-                
+
+
+        <!-- --------------------------------------
+             2.2. APARTADO DE SERVIZOS
+        --------------------------------------- -->
 
         <div class="servizos main-padding" id="serv">
+            <h1 class="titulo-servizos">Servizos</h1>
 
-            <h1 class="titulo-servizos"> Servizos </h1> 
-            
-            <!-- Estoy reutilizando la clase row del css -->
+            <!-- Reutilización de la clase row del CSS -->
             <div class="row row-servizos">
 
+                <!-- Servicio 1 -->
                 <div class="servizo-col">
-                    <h2 class="serv-titu">Reparación de ordenadores</h2>
-                    <p class="serv-des">Somos especialistas en reparación de ordenadores, xa sexan de sobremesa, portátiles ou servidores.</p>
-                </div>
-                
-                <div class="servizo-col">
-                    <h2 class="serv-titu">Actualizacións de software</h2>
-                    <p class="serv-des">Realizamos a instalación e a actualización de aplicacións, así como a limpeza de virus e malware.</p>
-                </div>
-                
-                <div class="servizo-col">
-                    <h2 class="serv-titu">Recuperación de datos</h2>
-                    <p class="serv-des">En TecnoRepara somos profesionais na recuperación de arquivos de calquera equipo en calquera formato comercial.</p>
+                    <h2 class="serv-titu"> Reparación de ordenadores </h2>
+                    <p class="serv-des">
+                        Somos especialistas en reparación de ordenadores,
+                        xa sexan de sobremesa, portátiles ou servidores.
+                    </p>
                 </div>
 
+
+                <!-- Servicio 2 -->
+                <div class="servizo-col">
+                    <h2 class="serv-titu"> Actualizacións de software </h2>
+                    <p class="serv-des">
+                        Realizamos a instalación e a actualización
+                        de aplicacións, así como a limpeza de virus
+                        e malware.
+                    </p>
+                </div>
+
+
+                <!-- Servicio 3 -->
+                <div class="servizo-col">
+                    <h2 class="serv-titu"> Recuperación de datos </h2>
+                    <p class="serv-des">
+                        En TecnoRepara somos profesionais na recuperación
+                        de arquivos de calquera equipo en calquera
+                        formato comercial.
+                    </p>
+                </div>
             </div>
         </div>
-        
-        <div class="sobre-nos main-padding" id="nos">
-            <div class="sobre-nos-container">
 
+
+        <!-- --------------------------------------
+             2.3. APARTADO SOBRE NÓS Y CONTACTO
+        --------------------------------------- -->
+
+        <div class="sobre-nos main-padding" id="nos">
+
+            <!-- Información de la empresa -->
+            <div class="sobre-nos-container">
                 <h1 class="titulo-sobre-nos">Sobre Nós</h1>
                 <div class="desc-sobre">
-                    <p>Somos un equipo de técnicos especializados na reparacion e mantemento de ordenadores. O noso obxetivo é ofrecer un servizo de calidade para que o cliente quede satisfeito.</p>
+                    <p>
+                        Somos un equipo de técnicos especializados
+                        na reparación e mantemento de ordenadores.
+                        O noso obxectivo é ofrecer un servizo de
+                        calidade para que o cliente quede satisfeito.
+                    </p>
                 </div>
-                
             </div>
 
+            <!-- Formulario de contacto -->
             <div class="form-contacto">
-                <div class="titulo-contacto" id="contactanos">Contáctenos</div>
+                <div class="titulo-contacto" id="contactanos"> Contáctenos </div>
+                <form action="" method="get">
+                    <label for="nombre"></label>
+                    <input
+                        class="input-class"
+                        type="text"
+                        name="nombre"
+                        id="nombre"
+                        placeholder="Nome"
+                        required
+                    >
 
-                <form action="" label="contactenos" onsubmit="">
-
-                    <label for="Nombre"></label>
-                    <input class="input-class" type="text" name="nombre" id="nombre" placeholder="Nome" required>
                     <label for="correo"></label>
-                    <input class="input-class" type="email" name="correo" id="correo" placeholder="Correo electronico" required>
-                    <textarea class="input-class" name="texto" id="texto" placeholder="Mensaxe" required></textarea>
-                    <input class="input-class boton-submit" type="submit" value="Enviar">
+                    <input
+                        class="input-class"
+                        type="email"
+                        name="correo"
+                        id="correo"
+                        placeholder="Correo electrónico"
+                        required
+                    >
 
+                    <textarea
+                        class="input-class"
+                        name="texto"
+                        id="texto"
+                        placeholder="Mensaxe"
+                        required
+                    ></textarea>
+
+                    <input
+                        class="input-class boton-submit"
+                        type="submit"
+                        value="Enviar"
+                    >
                 </form>
             </div>
-            
         </div>
+
     </main>
 
 
+    <!-- ==========================================
+         3. FOOTER - PIE DE PÁGINA
+    =========================================== -->
+
     <footer class="fondo-azul main-padding">
         <div class="flexing-footer">
+            <!-- Nombre de la empresa -->
             <div id="titulo">TecnoRepara</div>
-            <div class="condiciones" id="condicions">
-                <a class = "condiciones" href="termosdeservizo.html"">Termos do servizo</a>
-                <a class = "condiciones" href="politicadeprivacidade.html">Politica de privacidade</a>
-            </div>
 
+            <!-- Enlaces legales -->
+
+            <div class="condiciones" id="condicions">
+                <a class="condiciones" href="termosdeservizo.html"> Termos do servizo </a>
+                <a class="condiciones" href="politicadeprivacidade.html"> Política de privacidade </a>
+            </div>
         </div>
+
     </footer>
 
 </body>

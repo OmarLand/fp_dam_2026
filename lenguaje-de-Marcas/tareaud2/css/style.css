@@ -1,233 +1,270 @@
-html, body, textarea{
-    margin      : 0;
-    font-family : Arial, Helvetica, sans-serif;
+/* ==========================================
+   1. ESTILOS GENERALES
+========================================== */
+
+html,
+body,
+textarea {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Inicio del Navegador del header*/
-nav{
-    /* border          : 1px solid red; */
-    display         : flex;
-    flex-direction  : row;
-    justify-content : space-between;
-    padding         : 15px 42px 15px 42px;
-}
-
-ul{
-    list-style-type : none;
-    margin          : 0;
-    padding         : 0;
-    overflow        : hidden;
-}
-
-li{
-    margin          : 8px;
-    font-size       : 18px;
-}
-
-ul li{
-    float           : right;
-}
-
-ul li a{
-    display         : block;
-    color           : white;
-    text-align      : center;
-    text-decoration : none;
-}
-
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-#titulo{
-    font-size      : 30px;
-    font-weight    : bold;
-}
-/* Fin de Navegador del header*/
 
-/* Inicio del Contenedor principal */
+/* ==========================================
+   2. NAVEGADOR - HEADER
+========================================== */
 
-/* Clase para controlar el padding - Espacio que cubre toda la pagina */
-.main-padding{
-    padding   : 18px;
-}
-
-h1{
-    font-size : 60px;
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 42px;
 }
 
-/* He usado flexbox para controlar la imagen y ponerlo al lado del <p> y el <h1> el vertical*/
-.flexing-column{
-    display        : flex;
-    flex-direction : column;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-/* Con esta clase controlo los margenes del parrafo */
-.parrafo-benvidos{
-    font-size  : 25px;
+li {
+    margin: 8px;
+    font-size: 18px;
+}
+
+ul li {
+    float: right;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#titulo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   3. CONTENEDOR PRINCIPAL
+========================================== */
+
+/* Espacio general de la página */
+
+.main-padding {
+    padding: 18px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+/* Organización vertical mediante Flexbox */
+
+.flexing-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos del párrafo de bienvenida */
+
+.parrafo-benvidos {
+    font-size: 25px;
     text-align: justify;
-    width      : 80%;
-    margin-top : 5px;
+    width: 80%;
+    margin-top: 5px;
 }
 
-/* He usado flexbox para controlar la imagen y ponerlo al lado del <p> y el <h1> en horizontal*/
-.row{
-    display         : flex;
-    flex-direction  : row;
+/* Organización horizontal mediante Flexbox */
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
-#imagen-ejemplo{
-    border-radius : 10px;
-    height        : 30%;
-    margin        : 10px;
+/* Imagen de ejemplo */
+
+#imagen-ejemplo {
+    border-radius: 10px;
+    height: 30%;
+    margin: 10px;
 }
 
-/* Uso esta clase para el Header y el Footer */
-.fondo-azul{
-    background-color : #173B5F;
-    color            : white;
+
+/* ==========================================
+   4. COLORES Y ELEMENTOS COMUNES
+========================================== */
+
+/* Fondo azul utilizado en Header y Footer */
+
+.fondo-azul {
+    background-color: #173B5F;
+    color: white;
 }
 
-.benvidos{
-    border           : 1px solid #FFC057;
-    background-color : #FFC057;
-    color            : #173B5F;
-    padding          : 15px 55px 15px 55px;
+/* Botón de bienvenida */
+
+.benvidos {
+    border: 1px solid #FFC057;
+    background-color: #FFC057;
+    color: #173B5F;
+    padding: 15px 55px;
 }
 
-/* ### Inicio de apartado Servizos ### */
-.servizos{
-    /* border           : 1px solid red; */
-    display          : flex;
-    justify-content  : space-around;
-    flex-direction   : column;
-    background-color : #BDE3D4;
-    color            : #173B5F;
-    padding          : 50px 50px 50px 50px;
+
+/* ==========================================
+   5. APARTADO SERVIZOS
+========================================== */
+
+.servizos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #BDE3D4;
+    color: #173B5F;
+    padding: 50px;
 }
 
-.titulo-servizos{
-    font-size     : 28px;
-    margin-top    : 0px;
-    margin-bottom : 5px;
+.titulo-servizos {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
-.servizo-col{
-    /* border       : 1px solid red; */
-    width        : 25%;
-    margin-top   : 0px;
+.servizo-col {
+    width: 25%;
+    margin-top: 0;
 }
 
-.serv-titu{
-    font-size  : 23px;
+.serv-titu {
+    font-size: 23px;
 }
 
-.serv-des{
-    font-size  : 25px;
-    text-align:justify ;
+.serv-des {
+    font-size: 25px;
+    text-align: justify;
 }
 
-.row-servizos{
-    display         : flex;
-    justify-content : space-between;
-}
-/* ### Fin de apartado Servizos ### */
-
-/* ### Inicio del apartado de Sobre Nos - Formulario ### */
-.sobre-nos{
-    /* border           : 1px solid red; */
-    display          : flex;
-    flex-direction   : row;
-    background-color : #FFFAEE;
-    color            : #173B5F;
-    padding          : 50px 50px 50px 50px;
+.row-servizos {
+    display: flex;
+    justify-content: space-between;
 }
 
-.titulo-sobre-nos{
-    font-size     : 28px;
-    margin-top    : 0px;
-    margin-bottom : 5px;
+
+/* ==========================================
+   6. APARTADO SOBRE NÓS - FORMULARIO
+========================================== */
+
+.sobre-nos {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFAEE;
+    color: #173B5F;
+    padding: 50px;
 }
 
-.desc-sobre{
-    /* border    : 1px solid red; */
-    width      : 80%;
-    font-size  : 25px;
-    margin-top : 0px;
-    text-align : justify;
+.titulo-sobre-nos {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
-.form-contacto{
-    /* border       : 1px solid red; */
-    width        : 100%;
-    margin-right : 50px;
+.desc-sobre {
+    width: 80%;
+    font-size: 25px;
+    margin-top: 0;
+    text-align: justify;
 }
 
-.titulo-contacto{
-    font-size     : 28px;
-    font-weight   : bold;
-    margin-top    : 0px;
-    margin-bottom : 15px;
+/* Formulario de contacto */
+
+.form-contacto {
+    width: 100%;
+    margin-right: 50px;
 }
 
-.input-class{
-    height           : 30px;
-    width            : 75%;
-    padding          : 9px;
-    margin           : 9px;
-    border-radius    : 5px;
-    background-color : transparent;
-    border           : 1px solid #D4CFC5;
-    font-size        : 17px;
+.titulo-contacto {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
-.boton-submit{
-    background-color : #1976B1;
-    color            : white;
-    height           : 40px;
+.input-class {
+    height: 30px;
+    width: 75%;
+    padding: 9px;
+    margin: 9px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #D4CFC5;
+    font-size: 17px;
 }
 
-.flexing-footer{
+.boton-submit {
+    background-color: #1976B1;
+    color: white;
+    height: 40px;
+}
+
+
+/* ==========================================
+   7. FOOTER
+========================================== */
+
+.flexing-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 /* Condiciones del footer */
-.condiciones{
+
+.condiciones {
     margin: 10px;
 }
 
-/* ### Fin del apartado de Sobre Nos ### */
 
-/* ### Inicio Pagina Politicas de Privacidad ### */
+/* ==========================================
+   8. PÁGINA POLÍTICA DE PRIVACIDAD
+========================================== */
 
-.politicas-contain{
-    /* border          : 1px solid red; */
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-content   : center;
+.politicas-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     background-color: #C0CEDD;
-    height          : 454px;
-    /* height          : 100%; */
-    padding         : 50px;
-    color           : #173B5F;
-    text-align      : center;
+    height: 454px;
+    padding: 50px;
+    color: #173B5F;
+    text-align: center;
 }
 
-.titulo-politicas{
+.titulo-politicas {
     font-size: 28px;
 }
 
-.text-politica{
+.text-politica {
     font-size: 14px;
 }
 
-.volver{
-    background-color : transparent;
-    font-weight      : bold;
+.volver {
+    background-color: transparent;
+    font-weight: bold;
 }
 
-/* ### Fin Pagina Politicas de Privacidad ### */
+
+/* ==========================================
+   FIN DE LA HOJA DE ESTILOS
+========================================== */
