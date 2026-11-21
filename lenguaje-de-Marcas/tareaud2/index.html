@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,9 @@
         <nav>
             <div id="titulo">TecnoRepara</div>
             <ul>
-                <li>Nós</li>
-                <li>Servizos</li>
-                <li>Inicio</li>
+                <li> <a href="#nos"> Nós </a></li>
+                <li> <a href="#serv">Servizos</a></li>
+                <li> <a href="index.html">Inicio</a></li>
             </ul>
         </nav>
     </header>
@@ -30,8 +30,9 @@
         </div>
                 
 
-        <div class="servizos main-padding">
-            <h1 class="titulo-servizo"> Servizos </h1> 
+        <div class="servizos main-padding" id="serv">
+
+            <h1 class="titulo-servizos"> Servizos </h1> 
             
             <!-- Estoy reutilizando la clase row del css -->
             <div class="row row-servizos">
@@ -54,12 +55,44 @@
             </div>
         </div>
         
-        <div class="sobre-nos main-padding">Sobre nós</div>
+        <div class="sobre-nos main-padding" id="nos">
+            <div class="sobre-nos-container">
+
+                <h1 class="titulo-sobre-nos">Sobre Nós</h1>
+                <div class="desc-sobre">
+                    <p>Somos un equipo de técnicos especializados na reparacion e mantemento de ordenadores. O noso obxetivo é ofrecer un servizo de calidade para que o cliente quede satisfeito.</p>
+                </div>
+                
+            </div>
+
+            <div class="form-contacto">
+                <div class="titulo-contacto" id="contactanos">Contáctenos</div>
+
+                <form action="" label="contactenos" onsubmit="">
+
+                    <label for="Nombre"></label>
+                    <input class="input-class" type="text" name="nombre" id="nombre" placeholder="Nome" required>
+                    <label for="correo"></label>
+                    <input class="input-class" type="email" name="correo" id="correo" placeholder="Correo electronico" required>
+                    <textarea class="input-class" name="texto" id="texto" placeholder="Mensaxe" required></textarea>
+                    <input class="input-class boton-submit" type="submit" value="Enviar">
+
+                </form>
+            </div>
+            
+        </div>
     </main>
 
 
     <footer class="fondo-azul main-padding">
-        Termos do servizo - Politica de privacidade
+        <div class="flexing-footer">
+            <div id="titulo">TecnoRepara</div>
+            <div class="condiciones" id="condicions">
+                <a class = "condiciones" href="termosdeservizo.html"">Termos do servizo</a>
+                <a class = "condiciones" href="politicadeprivacidade.html">Politica de privacidade</a>
+            </div>
+
+        </div>
     </footer>
 
 </body>

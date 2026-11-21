@@ -1,4 +1,4 @@
-html, body{
+html, body, textarea{
     margin      : 0;
     font-family : Arial, Helvetica, sans-serif;
 }
@@ -35,6 +35,11 @@ ul li a{
     text-decoration : none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 #titulo{
     font-size      : 30px;
     font-weight    : bold;
@@ -45,7 +50,7 @@ ul li a{
 
 /* Clase para controlar el padding - Espacio que cubre toda la pagina */
 .main-padding{
-    padding : 18px;
+    padding   : 18px;
 }
 
 h1{
@@ -61,14 +66,15 @@ h1{
 /* Con esta clase controlo los margenes del parrafo */
 .parrafo-benvidos{
     font-size  : 25px;
+    text-align: justify;
     width      : 80%;
     margin-top : 5px;
 }
 
 /* He usado flexbox para controlar la imagen y ponerlo al lado del <p> y el <h1> en horizontal*/
 .row{
-    display: flex;
-    flex-direction: row;
+    display         : flex;
+    flex-direction  : row;
 }
 
 #imagen-ejemplo{
@@ -90,47 +96,138 @@ h1{
     padding          : 15px 55px 15px 55px;
 }
 
-/* Inicio de apartado Servizos */
+/* ### Inicio de apartado Servizos ### */
 .servizos{
-    /* border: 1px solid red; */
+    /* border           : 1px solid red; */
     display          : flex;
     justify-content  : space-around;
+    flex-direction   : column;
     background-color : #BDE3D4;
     color            : #173B5F;
+    padding          : 50px 50px 50px 50px;
 }
 
-.titulo-servizo{
-    border: 1px solid red;
-    font-size  : 25px;
-    padding    : 0 0 0 0px;
-    margin-top : 0px;
+.titulo-servizos{
+    font-size     : 28px;
+    margin-top    : 0px;
+    margin-bottom : 5px;
 }
 
 .servizo-col{
-    border       : 1px solid red;
+    /* border       : 1px solid red; */
     width        : 25%;
-    /* margin-left  : 3px;
-    margin-right : 40px; */
-    margin-top   : 25px;
-
+    margin-top   : 0px;
 }
 
 .serv-titu{
-    font-size: 21px;
+    font-size  : 23px;
 }
 
 .serv-des{
-    font-size: 20px;
+    font-size  : 25px;
+    text-align:justify ;
 }
 
 .row-servizos{
+    display         : flex;
+    justify-content : space-between;
+}
+/* ### Fin de apartado Servizos ### */
+
+/* ### Inicio del apartado de Sobre Nos - Formulario ### */
+.sobre-nos{
+    /* border           : 1px solid red; */
+    display          : flex;
+    flex-direction   : row;
+    background-color : #FFFAEE;
+    color            : #173B5F;
+    padding          : 50px 50px 50px 50px;
+}
+
+.titulo-sobre-nos{
+    font-size     : 28px;
+    margin-top    : 0px;
+    margin-bottom : 5px;
+}
+
+.desc-sobre{
+    /* border    : 1px solid red; */
+    width      : 80%;
+    font-size  : 25px;
+    margin-top : 0px;
+    text-align : justify;
+}
+
+.form-contacto{
+    /* border       : 1px solid red; */
+    width        : 100%;
+    margin-right : 50px;
+}
+
+.titulo-contacto{
+    font-size     : 28px;
+    font-weight   : bold;
+    margin-top    : 0px;
+    margin-bottom : 15px;
+}
+
+.input-class{
+    height           : 30px;
+    width            : 75%;
+    padding          : 9px;
+    margin           : 9px;
+    border-radius    : 5px;
+    background-color : transparent;
+    border           : 1px solid #D4CFC5;
+    font-size        : 17px;
+}
+
+.boton-submit{
+    background-color : #1976B1;
+    color            : white;
+    height           : 40px;
+}
+
+.flexing-footer{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-/* Fin de apartado Servizos */
-
-.sobre-nos{
-    background-color : #FFFAEE;
-    color            : #173B5F;
+/* Condiciones del footer */
+.condiciones{
+    margin: 10px;
 }
+
+/* ### Fin del apartado de Sobre Nos ### */
+
+/* ### Inicio Pagina Politicas de Privacidad ### */
+
+.politicas-contain{
+    /* border          : 1px solid red; */
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-content   : center;
+    background-color: #C0CEDD;
+    height          : 454px;
+    /* height          : 100%; */
+    padding         : 50px;
+    color           : #173B5F;
+    text-align      : center;
+}
+
+.titulo-politicas{
+    font-size: 28px;
+}
+
+.text-politica{
+    font-size: 14px;
+}
+
+.volver{
+    background-color : transparent;
+    font-weight      : bold;
+}
+
+/* ### Fin Pagina Politicas de Privacidad ### */
